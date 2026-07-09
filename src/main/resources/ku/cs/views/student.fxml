@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StudentController">
+   <children>
+      <Label layoutX="272.0" layoutY="14.0" text="Student Profile">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="45.0" layoutY="102.0" text="Student ID:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="40.0" layoutY="198.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="44.0" layoutY="300.0" text="Score:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="idLabel" layoutX="371.0" layoutY="102.0" text="idLabel">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="366.0" layoutY="198.0" text="nameLabel">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="scoreLabel" layoutX="370.0" layoutY="300.0" text="scoreLabel">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13731740143780982">
+                     <color>
+                        <Color red="1.0" green="0.7666666507720947" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2829268292682927">
+                     <color>
+                        <Color red="0.8500000238418579" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.44390243902439025">
+                     <color>
+                        <Color green="1.0" blue="0.16624365746974945" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5829268292682926">
+                     <color>
+                        <Color green="0.26522842049598694" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7707317073170732">
+                     <color>
+                        <Color red="0.7246192693710327" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.45304569602012634" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
