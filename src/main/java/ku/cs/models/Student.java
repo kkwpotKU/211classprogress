@@ -8,7 +8,31 @@ public class Student {
     public Student(String id, String name) {
         this.id = id;
         this.name = name;
-        score = 67.67;
+        score = 0;
+    }
+
+    public void changeName(String name) {
+        if (!name.trim().isEmpty()) {
+            this.name = name.trim();
+        }
+    }
+
+    public void addScore(double score) {
+        if (score > 0) {
+            this.score += score;
+        }
+    }
+
+    // TODO: design grading system for Student
+    public String grade()
+    {
+        if (score >= 80) return "A";
+        else if (score <= 40) return "F";
+        else return "IDK";
+    }
+
+    public boolean isId(String id) {
+        return this.id.equals(id);
     }
 
     public String getId() {
@@ -21,5 +45,15 @@ public class Student {
 
     public double getScore() {
         return score;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "id: '" + id + '\'' +
+                ", name: '" + name + '\'' +
+                ", score: " + score +
+                ", grade: " + grade() +
+                '}';
     }
 }
