@@ -8,8 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import ku.cs.models.Student;
 import ku.cs.models.StudentList;
-import ku.cs.services.FXRouter;
-import ku.cs.services.StudentHardCodeDatasource;
+import ku.cs.services.*;
 
 import java.io.IOException;
 
@@ -34,8 +33,13 @@ public class StudentListController {
         setupSelectionListener();
     }
 
+    private Datasource<StudentList> datasource;
+
     private void loadStudentData() {
-        StudentHardCodeDatasource datasource = new StudentHardCodeDatasource();
+        // StudentHardCodeDatasource datasource = new StudentHardCodeDatasource();
+        // Datasource<StudentList> datasource = new StudentListHardcodeDatasource();
+        // Datasource<StudentList> datasource = new StudentListFileDatasource("data", "student-list.csv");
+        datasource = new StudentListFileDatasource("data", "student-list.csv");
         studentList = datasource.readData();
     }
 
@@ -98,18 +102,19 @@ public class StudentListController {
                 studentList.giveScoreToId(selectedStudent.getId(), score);
                 showStudentInfo(selectedStudent);
                 studentListView.refresh();
+                datasource.writeData(studentList);
             } catch (NumberFormatException e) {
                 errorMessage = "Please insert number value";
                 errorLabel.setText(errorMessage);
             } finally {
                 if (errorMessage.isEmpty()) {
                     giveScoreTextField.setText("");
-                    clearErrorText();
+                    errorLabel.setText("");
                 }
             }
         } else {
             giveScoreTextField.setText("");
-            clearErrorText();
+            errorLabel.setText("");
         }
     }
 }

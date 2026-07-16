@@ -6,9 +6,13 @@ public class Student {
     private double score;
 
     public Student(String id, String name) {
+        this(id, name, 0);
+    }
+
+    public Student(String id, String name, double score) {
         this.id = id;
         this.name = name;
-        score = 0;
+        this.score = score;
     }
 
     public void changeName(String name) {

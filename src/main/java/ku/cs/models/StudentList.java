@@ -10,12 +10,16 @@ public class StudentList {
     }
 
     public void addNewStudent(String id, String name) {
+        addNewStudent(id, name, 0);
+    }
+
+    public void addNewStudent(String id, String name, double score) {
         id = id.trim();
         name = name.trim();
         if (!id.isEmpty() && !name.isEmpty()) {
             Student exist = findStudentById(id);
             if (exist == null) {
-                students.add(new Student(id, name));
+                students.add(new Student(id, name, score));
             }
         }
     }
